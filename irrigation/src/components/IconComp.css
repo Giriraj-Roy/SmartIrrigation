@@ -11,6 +11,10 @@
     border-radius: 0.8rem;
     background-color: #7fee7f;
 }
+.icon_image img{
+    width: 4vw;
+    height: 4vw;
+}
 .icon_title{
     font-size: 1.5vw;
     font-weight: 600;

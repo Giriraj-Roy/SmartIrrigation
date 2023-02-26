@@ -1,0 +1,35 @@
+.event_card{
+    margin: 1vw 0.5vw;
+    padding: 1vw 1vw 1vw 2vw;
+    display: flex;
+    width: 90%;
+    height: auto;
+    border-radius: 0.8rem;
+    background: rgb(210, 247, 180);
+    /* background: rgb(115, 221, 101); */
+    
+    box-shadow: -10px -5px 8px rgba(0, 0, 0, 0.2);
+}
+.event_log{
+    width: 70%;
+}
+.event_log_header{
+    margin-bottom: 0.5vw;
+    font-size: 1.6vw;
+    font-weight: 600;
+    color: rgb(34, 34, 34);
+}
+.event_log_desc{
+    font-size: 1.4vw;
+    font-weight: 400;
+    letter-spacing: 0.15rem;
+}
+.event_log_time{
+    width: 20%;
+    padding-bottom: 0.5vw;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    font-size: 1.4vw;
+    font-weight: 700;
+}

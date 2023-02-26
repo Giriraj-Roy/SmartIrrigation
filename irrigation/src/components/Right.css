@@ -14,7 +14,10 @@
     display: flex;
     justify-content: space-around;
 }
-
+.right_options_options img{
+    width: 1.5vw;
+    height: 1.5vw;
+}
 .right_logs{
     margin-top: 10vh;
     margin-bottom: 13vh;
@@ -25,8 +28,34 @@
     background-color: rgb(172, 245, 124);
     font-size: 1.5vw;
     font-weight: 600;
+    cursor: pointer;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;     /* FireFox */
+
 }
+.right_logs::-webkit-scrollbar {
+    display: none;
+  }
+
 .right_logs_memo{
+    margin: 4vh auto;
     font-size: 1vw;
     width: 90%;
+    font-weight: 400;
+    
+}
+.right_logs_memo div{
+    margin: 1vh 0;
+    -webkit-line-clamp: 1;
+}
+
+
+/* Event Modal Designs */
+
+.right_event_modal_cross{
+    position: absolute;
+    top: 0.5vw;
+    right: 0.5vw;
+    cursor: pointer;
 }
