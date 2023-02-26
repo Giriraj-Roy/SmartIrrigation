@@ -1,0 +1,29 @@
+.left_body{
+    width: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.left_tank{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10vh 0;
+}
+.left_humid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;    
+}
+.left_measure{
+    margin-top: 2vh;
+    font-size: 2vw;
+}
+.left_measure span{
+    font-size: 2.5vw;
+    font-weight: 700;
+}
