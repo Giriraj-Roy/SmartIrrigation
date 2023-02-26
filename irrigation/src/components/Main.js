@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import Webcam from 'react-webcam'
 import IconComp from './IconComp'
 import './Main.css'
@@ -11,7 +11,6 @@ import moistureIcon from '../assests/images/homepage/soil-moisture-monitoring-bl
 
 const Main = () => {
 
-  // const camRef = useRef(null);
 
   return (
     <div className='main_body'>
