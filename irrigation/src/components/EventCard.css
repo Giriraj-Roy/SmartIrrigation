@@ -5,10 +5,10 @@
     width: 90%;
     height: auto;
     border-radius: 0.8rem;
-    background: rgb(210, 247, 180);
+    /* background: rgb(210, 247, 180); */
     /* background: rgb(115, 221, 101); */
-    
-    box-shadow: -10px -5px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid rgb(210, 247, 180);
+    box-shadow: -10px -5px 8px rgb(115, 221, 101);
 }
 .event_log{
     width: 70%;

@@ -4,7 +4,8 @@ import './Right.css'
 import Modal from 'react-modal'
 import { eventData } from '../assests/eventData'
 import EventCard from './EventCard'
-import settingsIcon from '../assests/images/homepage/construction_FILL0_wght400_GRAD0_opsz48.png'
+// import settingsIcon from '../assests/images/homepage/construction_FILL0_wght400_GRAD0_opsz48.png'
+import settingsIcon from '../assests/images/homepage/W-01.svg'
 import net from '../assests/images/homepage/wifi_FILL0_wght400_GRAD0_opsz48.png'
 import bat from '../assests/images/homepage/battery_horiz_075_FILL0_wght400_GRAD0_opsz48.png'
 
@@ -26,6 +27,7 @@ const RightPane = () => {
       height: '20vh',
       borderRadius: '1rem',
       background: 'rgb(210, 247, 180)',
+
       transform: 'translate(-50%, -50%)',
     },
   };
@@ -41,7 +43,8 @@ const RightPane = () => {
       height: 'auto',
       maxHeight: '80vh',
       borderRadius: '1rem',
-      background: 'rgb(225, 247, 200)' ,
+      // background: 'rgb(225, 247, 200)' ,
+      background: 'linear-gradient(0deg, rgb(210, 247, 180) ,#FFFFFF)',
       transform: 'translate(-50%, -50%)',
     },
   };
@@ -63,6 +66,8 @@ const RightPane = () => {
       <Modal
         isOpen={settingsModalIsOpen}
         style={customStyles}
+        onRequestClose = {() => setSettingsModalIsOpen(false)}
+        shouldCloseOnOverlayClick={true}
         ariaHideApp={false}
         contentLabel="Example Modal">
           <div 
@@ -76,6 +81,8 @@ const RightPane = () => {
         <Modal
           isOpen={eventModalIsOpen}
           style={customStylesEvents}
+          onRequestClose = {() => setEventModalIsOpen(false)}
+          shouldCloseOnOverlayClick={true}
           ariaHideApp={false}
           contentLabel="Example Modal">
             <div
@@ -87,6 +94,9 @@ const RightPane = () => {
             </div>
             <div>
               {/* {Events} */}
+              <EventCard/>
+              <EventCard/>
+              <EventCard/>
               <EventCard/>
               <EventCard/>
               <EventCard/>

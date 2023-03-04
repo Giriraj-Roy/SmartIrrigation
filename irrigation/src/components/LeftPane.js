@@ -18,7 +18,7 @@ const LeftPane = ({tankMeasure, humidityMeasure}) => {
           {" "}/ 5 L</div>
       </div>
       <div className='left_humid'>
-        <IconComp title={"Humidity"} icon={humidityIcon}/>
+        <IconComp title={"Moisture"} icon={humidityIcon}/>
         <div  className='left_measure'>
           <span>
             {humidityMeasure}

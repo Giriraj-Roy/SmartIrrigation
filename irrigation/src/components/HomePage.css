@@ -3,5 +3,6 @@
     height: 100vh;
     max-height: 100vh;
     display: flex;
-    background-color: rgb(210, 247, 180);
+    /* background-color: rgb(210, 247, 180); */
+    background: linear-gradient(0deg, rgb(210, 247, 180) ,#FFFFFF);
 }

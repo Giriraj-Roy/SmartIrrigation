@@ -1,30 +1,42 @@
 import React from 'react'
-import Webcam from 'react-webcam'
 import IconComp from './IconComp'
+
+
+
+import Webcam from 'react-webcam'
+import { useTranslation } from 'react-i18next';
+
+
 import './Main.css'
+
+
 import downArrow from '../assests/images/homepage/arrow-down-3101.png'
 import upArrow from '../assests/images/homepage/arro-up-3100.png'
-import voiceIcon from '../assests/images/homepage/campaign_FILL0_wght400_GRAD0_opsz48.png'
+// import voiceIcon from '../assests/images/homepage/campaign_FILL0_wght400_GRAD0_opsz48.png'
+import voiceIcon from '../assests/images/homepage/Q-01.svg'
 import langIcon from '../assests/images/homepage/language_FILL0_wght400_GRAD0_opsz48.png'
-import sprinklerIcon from '../assests/images/homepage/sprinkler_FILL0_wght400_GRAD0_opsz48.png'
+// import sprinklerIcon from '../assests/images/homepage/sprinkler_FILL0_wght400_GRAD0_opsz48.png'
+import sprinklerIcon from '../assests/images/homepage/T-01.svg'
 import moistureIcon from '../assests/images/homepage/soil-moisture-monitoring-black-linear-icon-vector-removebg-preview.png'
 
 const Main = () => {
+
+  const { t, i18n } = useTranslation();
 
 
   return (
     <div className='main_body'>
       <div className='main_video'>
-        <Webcam
+        {/* <Webcam
               width={"100%"}
               height={"100%"}
               mirrored={true}
               audio={false}
-        />
+        /> */}
       </div>
       <div className='main_options'>
         <div className='main_options_left'>
-          <IconComp title={"voice"} icon={voiceIcon}/>
+          <IconComp title={t("voice")} icon={voiceIcon}/>
           <IconComp title={"lang"} icon={langIcon} />
         </div>
 
@@ -50,8 +62,8 @@ const Main = () => {
           <div style={{width: "30vw"}}></div>
 
         <div className='main_options_right'>
-          <IconComp title={"Water"} icon={sprinklerIcon}/>
-          <IconComp title={"Moisture"} icon={moistureIcon}/>
+          <IconComp title={"Sprinkle"} icon={sprinklerIcon}/>
+          <IconComp title={"Measure"} icon={moistureIcon}/>
         </div>
 
       </div>
