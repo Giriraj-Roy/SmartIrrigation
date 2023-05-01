@@ -27,12 +27,12 @@ const Main = () => {
   return (
     <div className='main_body'>
       <div className='main_video'>
-        {/* <Webcam
+        <Webcam
               width={"100%"}
               height={"100%"}
               mirrored={true}
               audio={false}
-        /> */}
+        />
       </div>
       <div className='main_options'>
         <div className='main_options_left'>
